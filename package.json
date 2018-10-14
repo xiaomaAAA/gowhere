@@ -14,7 +14,10 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue": "^2.5.2",
+<<<<<<< HEAD
     "vue-awesome-swiper": "^2.6.7",
+=======
+>>>>>>> 168839aa5554d5427aab9e829f9229fee4ea767b
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
