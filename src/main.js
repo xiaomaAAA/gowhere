@@ -11,7 +11,6 @@ import  'styles/reset.css'
 import  'styles/border.css'
 // 引入阿里图标
 import  'styles/iconfont.css'
-<<<<<<< HEAD
 //  引入使用轮播图的插件
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
@@ -20,12 +19,6 @@ Vue.config.productionTip = false
 // 取消 移动端300毫秒点击事件
 fastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper)   
-=======
-
-Vue.config.productionTip = false
-// 取消 移动端300毫秒点击事件
-fastClick.attach(document.body)   
->>>>>>> 168839aa5554d5427aab9e829f9229fee4ea767b
 
 /* eslint-disable no-new */
 new Vue({

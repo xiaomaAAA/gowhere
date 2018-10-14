@@ -1,23 +1,21 @@
 <template>
   <div>
     <home-header></home-header>
-<<<<<<< HEAD
     <home-swiper></home-swiper>
-=======
->>>>>>> 168839aa5554d5427aab9e829f9229fee4ea767b
+    <home-icons></home-icons>
   </div>
 </template>
 
 <script>
 import HomeHeader from './components/Header'
-<<<<<<< HEAD
 import HomeSwiper from './components/Swiper'
-=======
->>>>>>> 168839aa5554d5427aab9e829f9229fee4ea767b
+import HomeIcons from './components/Icons'
 export default {
   name: 'Home',
   components:{
-    HomeHeader
+    HomeHeader,
+    HomeSwiper,
+    HomeIcons,
   }
 }
 </script>
