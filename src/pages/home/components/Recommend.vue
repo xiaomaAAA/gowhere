@@ -2,7 +2,7 @@
     <div class="" id="">
         <div class="title">热销推荐</div>
         <ul>
-            <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+            <li class="item border-bottom" v-for="item of list" :key="item.id">
                 <img :src="item.imgUrl" class="item-img" alt="">
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
@@ -16,32 +16,8 @@
 <script>
 export default {
   name: "HomeRecommend",
-  data() {
-    return {
-      recommendList: [
-        {
-          id: "001",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/1602/77/773582b52f423ca290.img.jpg_200x200_bcef24a3.jpg",
-          title: "汕头中海度假村（原中信度假村）龙虎滩",
-          desc: "走进客家古邑，感受万绿河源"
-        },
-        {
-          id: "002",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/1602/77/773582b52f423ca290.img.jpg_200x200_bcef24a3.jpg",
-          title: "汕头中海度假村（原中信度假村）龙虎滩",
-          desc: "走进客家古邑，感受万绿河源"
-        },
-        {
-          id: "003",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/1602/77/773582b52f423ca290.img.jpg_200x200_bcef24a3.jpg",
-          title: "汕头中海度假村（原中信度假村）龙虎滩",
-          desc: "走进客家古邑，感受万绿河源"
-        }
-      ]
-    };
+  props:{
+    list:Array
   }
 };
 </script>
