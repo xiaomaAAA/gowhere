@@ -43,10 +43,6 @@
                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png',
                    desc: '游乐场'
                },{
-                   id:'007',
-                   imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png',
-                   desc: '游乐场'
-               },{
                    id:'008',
                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png',
                    desc: '游乐场'
