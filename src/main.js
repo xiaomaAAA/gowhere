@@ -15,6 +15,9 @@ import  'styles/iconfont.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 
+import store from './store'
+
+
 Vue.config.productionTip = false
 // 取消 移动端300毫秒点击事件
 fastClick.attach(document.body)
@@ -24,6 +27,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
