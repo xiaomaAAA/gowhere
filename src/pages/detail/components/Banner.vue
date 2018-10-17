@@ -1,20 +1,23 @@
 <template>
-    <div>
-        <div class="banner" @click="handleBannerClick">
-            <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1602/77/773582b52f423ca290.img.jpg_600x330_5166ceee.jpg" alt="">
-            <div class="banner-info">
-                <div class="banner-tittle">
-                    汕头中海度假村（原中信度假村）龙虎滩
-                </div>
-                <div class="banner-number">
-                    <span class="iconfont banner-icon">&#xe692;</span>
-                    39
-                </div>
-            </div>
+  <div>
+    <div class="banner" @click="handleBannerClick">
+      <img class="banner-img" :src="bannerImg" />
+      <div class="banner-info">
+        <div class="banner-tittle">
+          {{this.sightName}}
         </div>
-        <common-gallary :imgs="bannerImgs" v-show="showGallary" @close="handleGallaryClose"></common-gallary>
+        <div class="banner-number">
+          <span class="iconfont banner-icon">&#xe692;</span>
+          {{this.bannerImgs.length}}
+        </div>
+      </div>
     </div>
+    <fade-animation>
+      <common-gallary :imgs="bannerImgs" v-show="showGallary" @close="handleGallaryClose"></common-gallary>
+    </fade-animation>
+  </div>
 </template>
+
 <script>
     import CommonGallary from 'common/gallary/Gallary'
 
